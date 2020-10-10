@@ -46,14 +46,7 @@ This library requires `iOS 8.0+` and `Xcode 8.0+`.
       5、UIBarButtonItem+JKBarbuttonItem：自定义UIBarButtonItem 
       
 ## 版本历史
-- 0.0.3
-
-- 新增: JKDate 里面有关时间的转换，以及零点时间戳的获取，时间戳转各种时间，各种格式的时间转时间戳，还有时间的判断，如：刚刚，几分钟之前，几小时之前，昨天，2019 4-30 等等 
-
-- 0.0.2
-
-- 新增: UIView分类的x、y、width、height、centerX、centerY、origin、size、top、left、bottom、right前面都加上jk_,目的是为了与Masonry区分开
 
 - 0.0.1
 
-- 新增: 基础分类
+- 新增: 基础分类的新增
