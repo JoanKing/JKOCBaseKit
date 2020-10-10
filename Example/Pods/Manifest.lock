@@ -1,0 +1,21 @@
+PODS:
+  - JKOCBaseKit (0.0.1):
+    - JKOCBaseKit/JKCategory (= 0.0.1)
+    - JKOCBaseKit/JKKit (= 0.0.1)
+  - JKOCBaseKit/JKCategory (0.0.1)
+  - JKOCBaseKit/JKKit (0.0.1):
+    - JKOCBaseKit/JKCategory
+
+DEPENDENCIES:
+  - JKOCBaseKit (from `../`)
+
+EXTERNAL SOURCES:
+  JKOCBaseKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JKOCBaseKit: 8b22259cf2dcfe800f9f97b9e0c36fe44814ea5e
+
+PODFILE CHECKSUM: 3aa6264e631e966e827acf4aef36ace36dd65cd3
+
+COCOAPODS: 1.9.3

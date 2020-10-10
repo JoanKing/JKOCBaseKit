@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'JKOCBaseKit_Example' do
+  pod 'JKOCBaseKit', :path => '../'
+
+  target 'JKOCBaseKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
