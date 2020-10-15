@@ -55,7 +55,6 @@
 #import "UITextView+JKExtension.h"
 #import "UIView+JKLayout.h"
 #import "UIViewController+JKViewController.h"
-#import "UIWebView+JKExtension.h"
 #import "UIWindow+JKHierarchy.h"
 #import "JKDate.h"
 #import "JKGCDTimer.h"
