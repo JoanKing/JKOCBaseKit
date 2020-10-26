@@ -22,9 +22,8 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
   
-    NSLog(@"时间戳=%ld",(long)[JKDate jk_cTimestampFromString:@"2019 05-10" format:@"yyyy MM-dd"]);
-    NSLog(@"时间：2019 05-10 13:45 转换成时间戳为 =%ld",(long)[JKDate jk_cTimestampFromString:@"2019 05-10 8:13:45" format:@"yyyy MM-dd HH:mm:ss"]);
-    
+    NSLog(@"时间戳=%ld",(long)[JKDate jk_cTimestampFromString:@"2019 05-10" format:@"yyyy MM-dd" timestampType:second]);
+    NSLog(@"时间：2019 05-10 13:45 转换成时间戳为 =%ld",(long)[JKDate jk_cTimestampFromString:@"2019 05-10 8:13:45" format:@"yyyy MM-dd HH:mm:ss" timestampType:second]);
 }
 
 -(void)test{

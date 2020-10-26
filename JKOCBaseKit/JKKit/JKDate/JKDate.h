@@ -10,6 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum {
+    second = 1,
+    millisecond = 2,
+} TimestampType;
+
 @interface JKDate : NSObject
 
 #pragma mark 1、秒的字符串转化为 00:00:00 或者 00:00
@@ -167,8 +172,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param format 时间格式，如：YYYY-MM-dd HH:mm:ss
  @return 返回时间戳的字符串，如上面返回：1556432865
  */
-+(NSInteger)jk_cTimestampFromString:(NSString *)timeStr
-                          format:(NSString *)format;
++(NSString *)jk_cTimestampFromString:(NSString *)timeStr
+                          format:(NSString *)format timestampType:(TimestampType)timestampType;
 
 #pragma mark 16.获取本月1号的的：00：00：00 的时间戳
 /**

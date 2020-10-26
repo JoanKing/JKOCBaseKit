@@ -339,11 +339,11 @@
  @param format 时间格式，如：YYYY-MM-dd HH:mm:ss
  @return 返回时间戳的字符串，如上面返回：1556432865
  */
-+(NSInteger)jk_cTimestampFromString:(NSString *)timeStr
-                             format:(NSString *)format{
++(NSString *)jk_cTimestampFromString:(NSString *)timeStr
+                             format:(NSString *)format timestampType:(TimestampType)timestampType{
     NSDate *date = [self dateFromString:timeStr format:format];
     
-    return [self cTimestampFromDate:date];
+    return [self cTimestampFromDate:date timestampType:timestampType];
     
 }
 
@@ -356,9 +356,18 @@
     return date;
 }
 
-+(NSInteger)cTimestampFromDate:(NSDate *)date
++(NSString *)cTimestampFromDate:(NSDate *)date timestampType:(TimestampType)timestampType
 {
-    return (long)[date timeIntervalSince1970];
+    if (timestampType == second) {
+        // 秒直接直接返回
+        return [NSString stringWithFormat:@"%ld",(long)[date timeIntervalSince1970]];
+    }
+    // 有些要求时间精准一点，就是毫秒级别的
+    NSTimeInterval interval = [date timeIntervalSince1970] * 1000;
+    NSInteger time = interval;
+    NSString *timestamp = [NSString stringWithFormat:@"%zd",time];
+    
+    return timestamp;
 }
 
 #pragma mark 16.获取本月1号的的：00：00：00 的时间戳
