@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		84946F0125554EF8007F1D74 /* CustomTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84946F0025554EF8007F1D74 /* CustomTestViewController.m */; };
 		84C101EE2531AADA00AEEBBB /* monkey.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84C101DD2531AADA00AEEBBB /* monkey.gif */; };
 		84C101EF2531AADA00AEEBBB /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 84C101DE2531AADA00AEEBBB /* public_key.der */; };
 		84C101F02531AADA00AEEBBB /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 84C101DF2531AADA00AEEBBB /* private_key.p12 */; };
@@ -87,6 +88,8 @@
 		6563874C57C9B39D0132D95E /* Pods-JKOCBaseKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKOCBaseKit_Example.release.xcconfig"; path = "Target Support Files/Pods-JKOCBaseKit_Example/Pods-JKOCBaseKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81D20DEDB0B08CFFD3499A99 /* Pods_JKOCBaseKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKOCBaseKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84946EFF25554EF8007F1D74 /* CustomTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTestViewController.h; sourceTree = "<group>"; };
+		84946F0025554EF8007F1D74 /* CustomTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTestViewController.m; sourceTree = "<group>"; };
 		84C101DD2531AADA00AEEBBB /* monkey.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = monkey.gif; sourceTree = "<group>"; };
 		84C101DE2531AADA00AEEBBB /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
 		84C101DF2531AADA00AEEBBB /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 				84C102092531AC6200AEEBBB /* Test5ViewController.m */,
 				84C102062531AC6200AEEBBB /* TestViewController.h */,
 				84C101FB2531AC6100AEEBBB /* TestViewController.m */,
+				84946EFF25554EF8007F1D74 /* CustomTestViewController.h */,
+				84946F0025554EF8007F1D74 /* CustomTestViewController.m */,
 				84C101DC2531AADA00AEEBBB /* JKResource */,
 			);
 			path = TestClass;
@@ -512,6 +517,7 @@
 				6003F5A7195388D20070C39A /* JKViewController.m in Sources */,
 				84C102252531AC6400AEEBBB /* JKImpactFeedbackGeneratorViewController.m in Sources */,
 				84C102282531AC6400AEEBBB /* JKTableViewController.m in Sources */,
+				84946F0125554EF8007F1D74 /* CustomTestViewController.m in Sources */,
 				84C102212531AC6400AEEBBB /* JKSmallLabelViewController.m in Sources */,
 				84C102322531AC6400AEEBBB /* JKDateViewController.m in Sources */,
 				84C102302531AC6400AEEBBB /* JKColorViewController.m in Sources */,

@@ -30,13 +30,6 @@ IMPLEMENT_PROPERTY(UITextView)
 
 @implementation JKLimitInput
 
-
-+(void) load {
-    [super load];
-    [JKLimitInput sharedInstance];
-}
-
-
 +(JKLimitInput *) sharedInstance {
     static JKLimitInput *g_limitInput;
     static dispatch_once_t onceToken;

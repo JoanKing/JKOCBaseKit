@@ -36,7 +36,7 @@
 #import "JKColorViewController.h"
 //tableview的测试
 #import "JKTableViewViewController.h"
-
+#import "CustomTestViewController.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong) UITableView *tableView;
@@ -62,7 +62,7 @@
         NSLog(@"不支持");
     }
     
-    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密",@"二维码生成以及扫描的测试",@"根据银行卡号取银行的名字",@"Bundle资源文件的测试",@"可点击标签的添加",@"时间戳测试",@"高性能圆角",@"星座测试",@"tableview 的相关测试",@"震动",@"颜色的测试",@"tableview的测试"]];
+    [self.dataArray addObjectsFromArray:@[@"测试", @"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密",@"二维码生成以及扫描的测试",@"根据银行卡号取银行的名字",@"Bundle资源文件的测试",@"可点击标签的添加",@"时间戳测试",@"高性能圆角",@"星座测试",@"tableview 的相关测试",@"震动",@"颜色的测试",@"tableview的测试"]];
     
     [self.view addSubview:self.tableView];
 }
@@ -194,6 +194,9 @@
     }else if ([cell_name isEqualToString:@"tableview的测试"]){
         JKTableViewViewController *tableViewViewController = [JKTableViewViewController new];
         [self.navigationController pushViewController:tableViewViewController animated:YES];
+    } else if ([cell_name isEqualToString: @"测试"]) {
+        CustomTestViewController *customTestViewController = [[CustomTestViewController alloc]init];
+        [self.navigationController pushViewController:customTestViewController animated:YES];
     }
     
 }
